@@ -1,0 +1,22 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Script List Auto Sorter"
+config/features=PackedStringArray("4.5", "Forward Plus")
+
+[dotnet]
+
+project/assembly_name="Script List Auto Sorter"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/ScriptListAutoSorter/plugin.cfg")
