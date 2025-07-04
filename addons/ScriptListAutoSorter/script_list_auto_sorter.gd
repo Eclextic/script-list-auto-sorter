@@ -37,6 +37,10 @@ func _on_script_changed(_script: Script = null) -> void:
 	var editor := EditorInterface.get_script_editor()
 	var open_scripts := editor.get_open_scripts()
 	var open_script_editors := editor.get_open_script_editors()
+
+	if open_script_editors.is_empty():
+		return
+
 	var parent := open_script_editors[0].get_parent_control()
 	
 	var script_to_editor_relations: Array[ScriptToEditorRelation]
